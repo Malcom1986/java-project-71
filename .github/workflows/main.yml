@@ -21,7 +21,7 @@ jobs:
           arguments: build
           build-root-directory: app
       - name: Test & publish code coverage
-        uses: paambaati/codeclimate-action@v3
+        uses: paambaati/codeclimate-action@v2.7.1
         env:
           # Set CC_TEST_REPORTER_ID as secret of your repo
           CC_TEST_REPORTER_ID: ${{secrets.CC_TEST_REPORTER_ID}}
